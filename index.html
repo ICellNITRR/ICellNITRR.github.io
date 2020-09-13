@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>I-Cell Home</title>
+</head>
+<body>
+
+
+<!-- Containers -->
+
+    <div id="fullpage">
+  
+        <div class="section a" id="section0">
+       
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="./assets/goldberg.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="wrapper video-front" >
+                <div class="message">
+                <div class="logo" id="logo" onclick="myFunction()">
+                    <img src="./assets/logo.jpeg" alt="">
+                </div>
+              <div class="name">
+                <h1>Innovation Cell NITRR</h1>
+              </div>
+            </div>
+          </div>
+        <div class="footer">
+                <h1>Think Grow Innovate</h2>
+            
+        </div>  
+    </div>
+        </div>
+        <div class="section b" id="section1">Section A</div>
+        <div class="section c" id="section2">Section B</div>
+        <div class="section d" id="section3">Section C</div>
+        <div class="section e" id="section4">Section D</div>
+        <div class="section f" id="section5">Section E</div>
+        <div class="section g" id="section6">Section F</div>
+
+    </div>
+
+
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+
+<!-- Script for sliding effect -->
+<script type="text/javascript">
+
+	var myFullpage = new fullpage('#fullpage', {
+        navigation:true,
+
+		// sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+	});
+</script>
+
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("logo");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        // btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        // btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    
+</body>
+</html>
