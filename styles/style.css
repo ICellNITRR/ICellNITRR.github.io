@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  -o-filter: blur(4px);
+    filter: blur(4px);
+  
+
+  /* animation: blurr 40s  3s infinite; */
+  
+}
+
+.video-front{width: 100%;
+   height:100%
+   ; position: absolute;
+    top: 0; left: 0;}
+
+
+
+.container{
+    display: block;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+.wrapper{
+  /* padding-top: 40vh; */
+  animation-duration: 3s;
+  animation-name: logo;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  flex:1;  
+}
+.name{
+  flex:1;
+}
+
+.container img{
+  
+}
+
+#topic{
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+
+
+/* Animation sliding */
+@keyframes logo{
+  from{
+    padding-top: 0vh;
+    }
+    10%{
+        padding-top: 10vh;    
+    }
+
+    20%{
+        padding-top: 20vh;    
+    }
+
+    30%{
+        padding-top: 30vh;    
+    }
+    40%{
+        padding-top: 40vh;
+    }
+    50%{
+     transform: scale(2);
+    } 
+    60%{
+        padding-top: 30vh;
+    }
+    70%{
+        padding-top: 20vh;
+    }
+    80%{
+        padding-top: 10vh;
+    }
+  to{
+    padding-top: 0vh;
+  }
+}
+
+/* If to Blur video  */
+
+
+@keyframes blurr {
+  from{
+    -o-filter: blur(0px);
+    filter: blur(0px);
+  }
+  to{
+    -o-filter: blur(15px);
+    filter: blur(15px);
+  }
+
+}
