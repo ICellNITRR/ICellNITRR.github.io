@@ -1,0 +1,101 @@
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: rgb(76, 167, 202);
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: rgb(8, 8, 8);
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    height: 80%;
+    width: 80%;
+    /* position: relative; */
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    overflow-x: hidden;
+    left: 10%;
+    background-color: #d0f4fa;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  /* .box1 {
+    height: 16%;
+    width: 10%;
+    position: fixed;
+    z-index: 2;
+    top: 10%;
+    overflow-x: hidden;
+    left: 10%;
+    background-color: #121214;
+  } */
+  .box2 {
+    height: 80%;
+    width: 70%;
+    /* position: absolute; */
+    position: absolute;
+    z-index: 2;
+    /* top: 10%; */
+    overflow-x: hidden;
+    /* left: 20%; */
+    background-color: #1d67c7;
+  }
+  .box3 {
+    height: 80%;
+    width: 30%;
+    position: absolute;
+    /* position: relative; */
+    z-index: 2;
+    /* top: 10%; */
+    overflow-x: hidden;
+    /* left: 74%; */
+    right: 0%;
+    background-color: #290b94;
+  }
+  .center{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+  }
+  .U{
+      position: absolute;
+      bottom: 20%;
+      left: 10%;
+  }
+  .A{
+      position: absolute;
+      bottom: 5%;
+      left: 15%;
+  }
+
+
+  /* about text */
+
+  .about-text{
+    margin: 5%;
+    position: absolute;
+
+  }
