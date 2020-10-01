@@ -1,1 +1,4 @@
-Uploading the bsic idea/layout of About Us page.
+# ICellNITRR.github.io
+Official Repo 
+
+# Not open for contributions 
